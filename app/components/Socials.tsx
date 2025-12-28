@@ -2,11 +2,7 @@ import Link from "next/link"
 import clsx from "clsx"
 import type { Variants } from "motion"
 import { MotionDiv } from "../utils/lazy-ui"
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaInstagram,
-} from "react-icons/fa"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 /* ================= ANIMATIONS ================= */
 const container: Variants = {
@@ -48,19 +44,13 @@ const SOCIAL_LINKS = [
     Icon: FaGithub,
   },
   {
-    href: "https://www.linkedin.com/in/your-linkedin-username",
+    href: "https://www.linkedin.com/in/siddharth-shivhare-541b5a348/",
     Icon: FaLinkedinIn,
-  },
-  {
-    href: "https://www.instagram.com/your-instagram-username",
-    Icon: FaInstagram,
   },
 ]
 
 /* ================= COMPONENT ================= */
-export const Socials: React.FC<{
-  className?: string
-}> = ({ className }) => {
+const Socials = ({ className }: { className?: string }) => {
   return (
     <MotionDiv
       className={clsx("flex gap-2", className)}
@@ -85,3 +75,5 @@ export const Socials: React.FC<{
     </MotionDiv>
   )
 }
+
+export default Socials

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- ================= REACT ================= -->
+  <symbol id="react" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="2.2"/>
+    <ellipse cx="12" cy="12" rx="10" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- ================= NEXT ================= -->
+  <symbol id="next" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M8 8v8l8-8v8" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <symbol id="javascript" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="4"/>
+    <path d="M6 18l2-1c.4.7.8 1.2 1.6 1.2.8 0 1.3-.3 1.3-1.5V10h3v6.9c0 2.6-1.5 3.8-3.8 3.8-2 0-3.2-1-3.9-2.7z"/>
+    <path d="M14.5 17l2-1.2c.5.8 1.1 1.4 2.2 1.4.9 0 1.5-.4 1.5-1.1 0-.8-.6-1-1.7-1.5l-.6-.3c-1.8-.8-3-1.8-3-3.9 0-1.9 1.4-3.3 3.7-3.3 1.6 0 2.8.6 3.6 2l-1.9 1.2c-.4-.8-.9-1.1-1.7-1.1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.5 1.4l.6.3c2.1.9 3.3 1.9 3.3 4.1 0 2.3-1.8 3.6-4.2 3.6-2.4 0-3.9-1.1-4.6-2.6z"/>
+  </symbol>
+
+  <!-- ================= NODEJS ================= -->
+  <symbol id="nodejs" viewBox="0 0 24 24">
+    <path d="M12 2l9 5v10l-9 5-9-5V7z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M9 9v6l3 2 3-2V9" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <!-- ================= REDUX ================= -->
+  <symbol id="redux" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="2"/>
+    <circle cx="5" cy="12" r="2"/>
+    <circle cx="19" cy="12" r="2"/>
+    <path d="M7 12c1.5-3 4-5 5-5s3.5 2 5 5c-1.5 3-4 5-5 5s-3.5-2-5-5z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- ================= TAILWIND ================= -->
+  <symbol id="tailwind" viewBox="0 0 24 24">
+    <path d="M4 12c2-4 6-4 8-2s4 2 8-2c-2 4-6 4-8 2s-4-2-8 2zm0 4c2-4 6-4 8-2s4 2 8-2c-2 4-6 4-8 2s-4-2-8 2z"/>
+  </symbol>
+
+  <!-- ================= MATERIAL UI ================= -->
+  <symbol id="materialui" viewBox="0 0 24 24">
+    <path d="M12 2l10 6v8l-10 6-10-6V8z"/>
+    <path d="M12 6l6 3.5v5L12 18l-6-3.5v-5z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- ================= MYSQL ================= -->
+  <symbol id="mysql" viewBox="0 0 24 24">
+    <path d="M4 18c2-6 6-10 12-10 2 0 4 1 4 1s-2-3-6-3C8 6 4 12 4 18z"/>
+    <path d="M8 20c2-1 4-1 6 0"/>
+  </symbol>
+
+  <!-- ================= FIGMA ================= -->
+  <symbol id="figma" viewBox="0 0 24 24">
+    <circle cx="9" cy="5" r="3"/>
+    <circle cx="9" cy="12" r="3"/>
+    <circle cx="9" cy="19" r="3"/>
+    <circle cx="15" cy="8.5" r="3"/>
+    <circle cx="15" cy="15.5" r="3"/>
+  </symbol>
+
+</svg>

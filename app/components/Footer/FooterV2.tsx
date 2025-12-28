@@ -15,10 +15,7 @@ export const socialLinks = [
     href: SITE_NAP.profiles.github,
     icon: "github",
   },
-  {
-    href: SITE_NAP.profiles.x,
-    icon: "x",
-  },
+ 
 ]
 
 export const FooterV2: React.FC = () => {

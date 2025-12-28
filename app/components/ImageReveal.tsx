@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image"
 import { ReactElement } from "react"
-import { Socials } from "./Socials"
+import Socials from "./Socials"
 import { socialLinks } from "./Footer/FooterV2"
 import { MotionDiv } from "../utils/lazy-ui"
 

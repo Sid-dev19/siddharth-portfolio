@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { TextSlider } from "./TextSlider"
-import { Socials } from "../Socials"
+import Socials from "../Socials"
 import { SITE_NAP, SITE_SLUGS } from "@/config/siteConfig"
 import { H2 } from "@/app/ui/Elements"
 

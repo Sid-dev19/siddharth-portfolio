@@ -28,7 +28,9 @@ export function ProjectsGrid({ className }: { className?: string }) {
   const [, setReveal] = useUI<"true" | "false">("reveal", "false")
 
   const { scrollYProgress } = useScroll({
-    offset: isMobile ? ["start start", "10% start"] : ["start start", "15% start"],
+    offset: isMobile
+      ? ["start start", "10% start"]
+      : ["start start", "15% start"],
   })
 
   const stiffness = isMobile ? 120 : 220
@@ -63,13 +65,12 @@ export function ProjectsGrid({ className }: { className?: string }) {
     },
   }
 
-  /* ===================== SAFE OFFSETS (FIX) ===================== */
+  /* ===================== SAFE OFFSETS (TS FIX) ===================== */
   const offsets: Record<string, HeroOffset> = Object.fromEntries(
     ids.map((id) => {
       const base = rawOffsets?.[id]
       const tune = OFFSET_TUNING[id]
 
-      // ⛔ IMPORTANT: guard undefined offsets
       if (!base || !tune) {
         return [
           id,
@@ -85,8 +86,8 @@ export function ProjectsGrid({ className }: { className?: string }) {
       return [
         id,
         {
-          x: base.x + (tune.dx ?? 0),
-          y: base.y + (tune.dy ?? 0),
+          x: (base.x ?? 0) + (tune.dx ?? 0),
+          y: (base.y ?? 0) + (tune.dy ?? 0),
           rot: tune.rot ?? 0,
           s: tune.s ?? 1,
         },
@@ -94,7 +95,11 @@ export function ProjectsGrid({ className }: { className?: string }) {
     })
   )
 
-  const triggerProgress = isMobile ? (isSmallScreen ? 0.15 : 0.2) : 0.5
+  const triggerProgress = isMobile
+    ? isSmallScreen
+      ? 0.15
+      : 0.2
+    : 0.5
 
   useEffect(() => {
     const unsubscribe = progress.on("change", (latest) => {
@@ -123,8 +128,6 @@ export function ProjectsGrid({ className }: { className?: string }) {
           dataText="View Live"
         />
 
-        
-
         <AnimatedCard
           src={restrobuddyPreview}
           alt="RestroBuddy Restaurant Billing & POS System Preview"
@@ -148,6 +151,7 @@ export function ProjectsGrid({ className }: { className?: string }) {
           href="https://www.shubhtriptravels.com/"
           dataText="View Website"
         />
+
         <AnimatedCard
           src={pintoraPreview}
           alt="Pintora MERN Stack E-Commerce Application Preview"

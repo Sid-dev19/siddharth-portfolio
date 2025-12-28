@@ -1,38 +1,36 @@
-import clsx from "clsx"
-import Socials from "../Socials"
+import Link from "next/link"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
-const FooterV2 = () => {
+/* ================= SOCIAL LINKS ================= */
+const SOCIAL_LINKS = [
+  {
+    href: "https://github.com/Sid-dev19",
+    Icon: FaGithub,
+  },
+  {
+    href: "https://www.linkedin.com/in/siddharth-shivhare-541b5a348/",
+    Icon: FaLinkedinIn,
+  },
+]
+
+/* ================= COMPONENT ================= */
+const Socials = () => {
   return (
-    <footer className="w-full border-t border-gray-200 bg-white py-10">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          
-          {/* LEFT SIDE */}
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-black">
-              Siddharth Shivhare
-            </h3>
-            <p className="text-sm text-gray-500">
-              MERN Stack Developer
-            </p>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="flex flex-col gap-2">
-            <span className="text-sm text-gray-500">Socials</span>
-
-            {/* ✅ IMPORTANT: NO PROPS PASSED */}
-            <Socials />
-          </div>
-        </div>
-
-        {/* BOTTOM */}
-        <div className="mt-8 border-t border-gray-100 pt-4 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} Siddharth Shivhare. All rights reserved.
-        </div>
-      </div>
-    </footer>
+    <div className="flex gap-2">
+      {SOCIAL_LINKS.map(({ href, Icon }, index) => (
+        <Link
+          key={index}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="social-link"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-black transition-all hover:scale-110 hover:bg-black hover:text-white"
+        >
+          <Icon size={16} />
+        </Link>
+      ))}
+    </div>
   )
 }
 
-export default FooterV2
+export default Socials

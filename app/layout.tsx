@@ -1,4 +1,4 @@
-import { FooterV2 } from "./components/Footer/FooterV2"
+import FooterV2 from "./components/Footer/FooterV2"
 import localFont from "next/font/local"
 import "./globalsV2.css"
 import { Metadata } from "next"

@@ -104,11 +104,11 @@ export const AboutSectionV2 = ({ className = "" }: { className?: string }) => {
             </p>
 
             {/* signature */}
-            <Image
+            {/* <Image
               src={signature}
               alt="Siddharth Shivhare Signature"
               className="relative mt-6 -ml-3 h-12 w-auto"
-            />
+            /> */}
           </Typography>
         </div>
       </div>
